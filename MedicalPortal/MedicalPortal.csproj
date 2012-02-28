@@ -87,6 +87,7 @@
     <Content Include="GapSourceDictionary.xml" />
     <Content Include="www\scripts\jquery-1.7.1.min.js" />
     <Content Include="www\scripts\jquery.mobile-1.0.1.min.js" />
+    <Content Include="www\scripts\json2.js" />
     <Content Include="www\scripts\knockout-2.0.0.js" />
     <Content Include="www\scripts\phonegap-1.4.1.js" />
     <Content Include="www\scripts\viewmodels\Home.js" />

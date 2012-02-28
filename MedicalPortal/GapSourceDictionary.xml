@@ -7,6 +7,7 @@
     <FilePath Value="www\scripts\App.js"/>
     <FilePath Value="www\scripts\jquery-1.7.1.min.js"/>
     <FilePath Value="www\scripts\jquery.mobile-1.0.1.min.js"/>
+    <FilePath Value="www\scripts\json2.js"/>
     <FilePath Value="www\scripts\knockout-2.0.0.js"/>
     <FilePath Value="www\scripts\phonegap-1.4.1.js"/>
     <FilePath Value="www\scripts\viewmodels\Home.js"/>
