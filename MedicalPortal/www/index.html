@@ -8,18 +8,18 @@
     
 	  <link rel="stylesheet" href="master.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
             
-      <script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
+      <script type="text/javascript" charset="utf-8" src="scripts/phonegap-1.4.1.js"></script>
+      <script type="text/javascript" charset="utf-8" src="scripts/jquery-1.7.1.min.js"></script>
+      <script type="text/javascript" charset="utf-8" src="scripts/knockout-2.0.0.js"></script>
+      <script type="text/javascript" charset="utf-8" src="scripts/viewmodels/home.js"></script>
        
       <script type="text/javascript">
 
         document.addEventListener("deviceready",onDeviceReady,false);
 
         // once the device ready event fires, you can safely do your thing! -jm
-        function onDeviceReady()
-        {
-            document.getElementById("welcomeMsg").innerHTML += "PhoneGap is ready! version=" + window.device.phonegap;
-            console.log("onDeviceReady. You should see this message in Visual Studio's output window.");
-            
+        function onDeviceReady() {
+            ko.applyBindings(new HomeViewModel());
         }
 
       </script>
@@ -29,7 +29,8 @@
 
   </head>
   <body>
-    <h1>Hello PhoneGap</h1>
-    <div id="welcomeMsg"></div>
+    <span data-bind="text: welcomeMessage"></span>
+    <br />
+    <a href="#" data-bind="click: updateMessage, visible: isUpdateLinkVisible">Click me to find out</a>
   </body>
 </html>
