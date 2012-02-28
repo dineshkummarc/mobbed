@@ -7,10 +7,14 @@
     <title>PhoneGap WP7</title>
     
 	  <link rel="stylesheet" href="master.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+      <link rel="stylesheet" href="css/jquery.mobile-1.0.1.min.css" />
             
       <script type="text/javascript" charset="utf-8" src="scripts/phonegap-1.4.1.js"></script>
       <script type="text/javascript" charset="utf-8" src="scripts/jquery-1.7.1.min.js"></script>
+      <script src="scripts/jquery.mobile-1.0.1.min.js"></script>
       <script type="text/javascript" charset="utf-8" src="scripts/knockout-2.0.0.js"></script>
+
+      <script type="text/javascript" charset="utf-8" src="scripts/app.js"></script>
       <script type="text/javascript" charset="utf-8" src="scripts/viewmodels/home.js"></script>
        
       <script type="text/javascript">
@@ -19,15 +23,18 @@
 
         // once the device ready event fires, you can safely do your thing! -jm
         function onDeviceReady() {
-            ko.applyBindings(new HomeViewModel());
+            
         }
 
       </script>
   </head>
   <body>
-    <div data-bind="template: { name: 'welcome-message-template' }"></div>
-    <br />
-    <a href="#" data-bind="click: updateMessage, visible: isUpdateLinkVisible">Click me to find out</a>
+    
+    <div data-role="page">
+        <div data-bind="template: { name: 'welcome-message-template' }"></div>
+        <a href="#" data-bind="click: updateMessage, visible: isUpdateLinkVisible">Click me to find out</a>
+    </div>
+    
   </body>
 </html>
 

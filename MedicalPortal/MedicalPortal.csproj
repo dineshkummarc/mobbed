@@ -69,6 +69,8 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="www\css\jquery.mobile-1.0.1.min.css" />
+    <Content Include="www\scripts\App.js" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -84,6 +86,7 @@
     <Content Include="GapLib\WP7GapClassLib.dll" />
     <Content Include="GapSourceDictionary.xml" />
     <Content Include="www\scripts\jquery-1.7.1.min.js" />
+    <Content Include="www\scripts\jquery.mobile-1.0.1.min.js" />
     <Content Include="www\scripts\knockout-2.0.0.js" />
     <Content Include="www\scripts\phonegap-1.4.1.js" />
     <Content Include="www\scripts\viewmodels\Home.js" />
