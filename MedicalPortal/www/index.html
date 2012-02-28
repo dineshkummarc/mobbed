@@ -4,9 +4,9 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
     
-    <title>PhoneGap WP7</title>
+    <title>Medical Portal</title>
     
-	  <link rel="stylesheet" href="master.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+	  <link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
       <link rel="stylesheet" href="css/jquery.mobile-1.0.1.min.css" />
             
       <script type="text/javascript" charset="utf-8" src="scripts/phonegap-1.4.1.js"></script>
@@ -17,25 +17,40 @@
 
       <script type="text/javascript" charset="utf-8" src="scripts/app.js"></script>
       <script type="text/javascript" charset="utf-8" src="scripts/viewmodels/home.js"></script>
+      <script type="text/javascript" charset="utf-8" src="scripts/viewmodels/diagnostics.js"></script>
        
       <script type="text/javascript">
 
         document.addEventListener("deviceready",onDeviceReady,false);
 
-        // once the device ready event fires, you can safely do your thing! -jm
-        function onDeviceReady() {
-            
-        }
+        function onDeviceReady() {}
 
       </script>
   </head>
   <body>
     
     <div id="home" data-role="page">
-        <div data-bind="template: { name: 'welcome-message-template' }"></div>
-        <a href="#" data-bind="click: updateMessage, visible: isUpdateLinkVisible">Click me to find out</a>
-    </div>
+        <div data-theme="a" data-role="header">
+            <h3>Medical Portal</h3>
+        </div>
+        <div data-role="content">
+            <a href="#diagnostics" data-role="button" data-transition="pop" data-theme="a" data-icon="check" data-iconpos="left">
+                Run Diagnostics
+            </a>
+        </div>
+      </div>
     
+    <div id="diagnostics" data-role="page">
+        <div data-theme="a" data-role="header">
+            <h3>Diagnostics</h3>
+        </div>
+        <div data-role="content">
+            Status: <span data-bind="text: status"></span>
+            <a data-bind="click: runDiagnostics" data-role="button" data-transition="pop" data-theme="a" data-icon="check" data-iconpos="left">
+                Run Diagnostics
+            </a>
+        </div>
+      </div>
   </body>
 </html>
 
