@@ -23,14 +23,14 @@
         }
 
       </script>
-      
-	 
-	  
-
   </head>
   <body>
-    <span data-bind="text: welcomeMessage"></span>
+    <div data-bind="template: { name: 'welcome-message-template' }"></div>
     <br />
     <a href="#" data-bind="click: updateMessage, visible: isUpdateLinkVisible">Click me to find out</a>
   </body>
 </html>
+
+<script type="text/html" id="welcome-message-template">
+    <h3 data-bind="text: welcomeMessage"></h3>
+</script>

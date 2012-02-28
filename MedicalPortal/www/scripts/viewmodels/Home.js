@@ -5,5 +5,6 @@
     this.updateMessage = function () {
         this.welcomeMessage("Hello world!");
         this.isUpdateLinkVisible(false);
+        console.log("executed");
     };
 };
