@@ -16,7 +16,12 @@
      color:#FFC312; /* Mango me! */
   }
 
-
+#qunit-tests ol li.fail
+{
+    white-space: normal;
+    overflow: auto;
+    display: block;
+}
  	
 
 

@@ -2,10 +2,8 @@
     App.ViewModels.DiagnosticsViewModel = function () {
         var self = {};
 
-        self.status = ko.observable("Unknown");
-
-        self.runDiagnostics = function () {
-            self.status("Checking status...");
+        self.startTests = function () {
+            App.ViewModels.Tests.testHomeViewModel();
         };
 
         return self;

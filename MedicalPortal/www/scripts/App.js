@@ -1,5 +1,6 @@
 ﻿var App = window.App = {};
 App.ViewModels = {};
+App.ViewModels.Tests = {};
 
 $(document).on("pageinit", "#home", function () {
     ko.applyBindings(new App.ViewModels.HomeViewModel(), this);
