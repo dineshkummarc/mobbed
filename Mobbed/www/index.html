@@ -15,13 +15,9 @@
       <script type="text/javascript" charset="utf-8" src="scripts/jquery.mobile-1.0.1.min.js"></script>
       <script type="text/javascript" charset="utf-8" src="scripts/knockout-2.0.0.js"></script>
       <script type="text/javascript" charset="utf-8" src="scripts/json2.js"></script>
-      <script type="text/javascript" charset="utf-8" src="scripts/qunit.js"></script>
 
       <script type="text/javascript" charset="utf-8" src="scripts/app.js"></script>
       <script type="text/javascript" charset="utf-8" src="scripts/viewmodels/home.js"></script>
-      <script type="text/javascript" charset="utf-8" src="scripts/viewmodels/diagnostics.js"></script>
-      
-      <script type="text/javascript" charset="utf-8" src="scripts/tests/testhome.js"></script>
        
       <script type="text/javascript">
 
@@ -38,21 +34,9 @@
             <h3>Round Tracker</h3>
         </div>
         <div data-role="content">
-            <a href="#diagnostics" data-role="button" data-transition="pop" data-theme="a" data-icon="check" data-iconpos="left">
+            <a href="tests.html" data-role="button" rel="external" data-transition="pop" data-theme="a" data-icon="check" data-iconpos="left">
                 Run Diagnostics
             </a>
-        </div>
-      </div>
-    
-    <div id="diagnostics" data-role="page">
-        <div data-theme="a" data-role="header">
-            <h3>Diagnostics</h3>
-            <!--<a href="javascript:(function(){jselem=document.createElement('SCRIPT');jselem.type='text/javascript';jselem.src='http://stevesouders.com/mobileperf/mobileperfbkm.js';document.getElementsByTagName('body')[0].appendChild(jselem);})();">Debug</a>-->
-        </div>
-        <div data-role="content">
-            <a data-bind="click: startTests" data-role="button">Start</a>
-            <h2 id="qunit-userAgent"></h2>  
-            <ol id="qunit-tests"></ol>
         </div>
       </div>
   </body>

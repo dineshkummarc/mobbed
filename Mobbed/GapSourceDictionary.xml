@@ -14,6 +14,5 @@
     <FilePath Value="www\scripts\phonegap-1.4.1.js"/>
     <FilePath Value="www\scripts\qunit.js"/>
     <FilePath Value="www\scripts\tests\TestHome.js"/>
-    <FilePath Value="www\scripts\viewmodels\Diagnostics.js"/>
     <FilePath Value="www\scripts\viewmodels\Home.js"/>
 </GapSourceDictionary>
