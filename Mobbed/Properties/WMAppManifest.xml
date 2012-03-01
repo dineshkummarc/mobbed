@@ -1,11 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
-  <App xmlns="" ProductID="{9b4a8f3e-9d05-44d3-ad19-676953c68212}" Title="MedicalPortal" 
-       RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  
-       Author="MedicalPortal author" 
-       Description="PhoneGap for Windows Phone 7" 
-       Publisher="MedicalPortal">
-    
+  <App xmlns="" ProductID="{9b4a8f3e-9d05-44d3-ad19-676953c68212}" Title="Round Tracker" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Mobbed author" Description="PhoneGap for Windows Phone 7" Publisher="Mobbed">
     <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_IDENTITY_DEVICE" />
@@ -13,18 +8,16 @@
       <Capability Name="ID_CAP_LOCATION" />
       <Capability Name="ID_CAP_NETWORKING" />
       <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
-
     </Capabilities>
-    
     <Tasks>
       <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
     </Tasks>
     <Tokens>
-      <PrimaryToken TokenID="MedicalPortalToken" TaskName="_default">
+      <PrimaryToken TokenID="MobbedToken" TaskName="_default">
         <TemplateType5>
           <BackgroundImageURI IsRelative="true" IsResource="false">Background.png</BackgroundImageURI>
           <Count>0</Count>
-          <Title>MedicalPortal</Title>
+          <Title>Round Tracker</Title>
         </TemplateType5>
       </PrimaryToken>
     </Tokens>

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicalPortal", "MedicalPortal.csproj", "{6D441AF7-0D3D-42F2-81F9-F1F000ECE61C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoundTracker", "RoundTracker.csproj", "{6D441AF7-0D3D-42F2-81F9-F1F000ECE61C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2E85FF15-847E-4399-81A4-7746450D5D7F}"
 	ProjectSection(SolutionItems) = preProject

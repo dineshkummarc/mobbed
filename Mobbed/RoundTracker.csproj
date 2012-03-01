@@ -9,8 +9,8 @@
     <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MedicalPortal</RootNamespace>
-    <AssemblyName>MedicalPortal</AssemblyName>
+    <RootNamespace>Mobbed</RootNamespace>
+    <AssemblyName>Mobbed</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
     <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
@@ -20,9 +20,9 @@
     </SupportedCultures>
     <XapOutputs>true</XapOutputs>
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
-    <XapFilename>MedicalPortal.xap</XapFilename>
+    <XapFilename>Mobbed.xap</XapFilename>
     <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
-    <SilverlightAppEntry>MedicalPortal.App</SilverlightAppEntry>
+    <SilverlightAppEntry>Mobbed.App</SilverlightAppEntry>
     <ValidateXaml>true</ValidateXaml>
     <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
   </PropertyGroup>
@@ -69,6 +69,9 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="www\tests.html">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="www\scripts\tests\TestHome.js" />
     <Content Include="www\css\jquery.mobile-1.0.1.min.css" />
     <Content Include="www\css\qunit.css" />
@@ -85,7 +88,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="GapLib\WP7GapClassLib.dll" />
-    <Content Include="GapSourceDictionary.xml" />
+    <Content Include="GapSourceDictionary.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="www\scripts\App.js" />
     <Content Include="www\scripts\jquery-1.7.1.min.js" />
     <Content Include="www\scripts\jquery.mobile-1.0.1.min.js" />

@@ -2,6 +2,7 @@
 <!-- This file is auto-generated, do not edit! -jm -->
 <GapSourceDictionary>
     <FilePath Value="www\index.html"/>
+    <FilePath Value="www\tests.html"/>
     <FilePath Value="www\css\jquery.mobile-1.0.1.min.css"/>
     <FilePath Value="www\css\master.css"/>
     <FilePath Value="www\css\qunit.css"/>

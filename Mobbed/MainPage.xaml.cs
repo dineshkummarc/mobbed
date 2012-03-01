@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Resources;
 
 
-namespace MedicalPortal
+namespace Mobbed
 {
     public partial class MainPage : PhoneApplicationPage
     {
