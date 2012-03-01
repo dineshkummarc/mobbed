@@ -17,6 +17,7 @@
       <script type="text/javascript" charset="utf-8" src="scripts/json2.js"></script>
 
       <script type="text/javascript" charset="utf-8" src="scripts/app.js"></script>
+      <script type="text/javascript" charset="utf-8" src="scripts/tests/testsetup.js"></script> <!-- mock service for now -->
       <script type="text/javascript" charset="utf-8" src="scripts/viewmodels/home.js"></script>
        
       <script type="text/javascript">
@@ -34,6 +35,11 @@
             <h3>Round Tracker</h3>
         </div>
         <div data-role="content">
+            <div class="ui-grid-a">
+                <div class="ui-block-a" data-bind="foreach: people">
+                    <span data-bind="text: firstName"></span> <span data-bind="text: lastName"></span>
+                </div>
+            </div>
             <a href="tests.html" data-role="button" rel="external" data-transition="pop" data-theme="a" data-icon="check" data-iconpos="left">
                 Run Diagnostics
             </a>
@@ -42,6 +48,6 @@
   </body>
 </html>
 
-<script type="text/html" id="welcome-message-template">
-    <h3 data-bind="text: welcomeMessage"></h3>
+<script type="text/html" id="person-template">
+    
 </script>
