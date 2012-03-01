@@ -6,12 +6,13 @@
       <link rel="stylesheet" href="css/qunit.css" />
             
       <script type="text/javascript" charset="utf-8" src="scripts/jquery-1.7.1.min.js"></script>
+      <script type="text/javascript" charset="utf-8" src="scripts/knockout-2.0.0.js"></script>
       <script type="text/javascript" charset="utf-8" src="scripts/qunit.js"></script>
 
       <script type="text/javascript" charset="utf-8" src="scripts/app.js"></script>
       <script type="text/javascript" charset="utf-8" src="scripts/viewmodels/home.js"></script>
-      <script type="text/javascript" charset="utf-8" src="scripts/viewmodels/diagnostics.js"></script>
 
+      <script type="text/javascript" charset="utf-8" src="scripts/tests/testsetup.js"></script>
       <script type="text/javascript" charset="utf-8" src="scripts/tests/testhome.js"></script>
   </head>
   <body>
@@ -24,9 +25,3 @@
 
   </body>
 </html>
-
-<script>
-    $(function () {
-        App.ViewModels.Tests.testHomeViewModel();
-    });
-</script>

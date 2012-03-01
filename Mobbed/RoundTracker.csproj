@@ -69,6 +69,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="www\scripts\tests\TestSetup.js" />
     <Content Include="www\tests.html">
       <SubType>Designer</SubType>
     </Content>
